@@ -4,4 +4,5 @@ return {
 	require("plugins.lualine"),
 	require("plugins.kanagawa"),
 	require("plugins.toggleterm"),
+	require("plugins.vim-commentary"),
 }
