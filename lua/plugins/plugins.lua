@@ -8,7 +8,7 @@ return {
 	-- File tree.
 	{
 			"nvim-tree/nvim-tree.lua",
-			requires = { "nvim-tree/nvim-web-devicons" },  -- Optional, for file icons
+			requires = { "nvim-tree/nvim-web-devicons" },
 			config = function()
 					require("nvim-tree").setup {}
 			end,
@@ -21,7 +21,7 @@ return {
 		config = function()
 			require('lualine').setup {
 				options = {
-					theme = 'auto', -- You can specify a theme here or use 'auto'
+					theme = 'auto',
 					section_separators = '',
 					component_separators = '',
 				},
@@ -47,12 +47,21 @@ return {
     config = function()
         require("flutter-tools").setup {
             lsp = {
-                on_attach = require("configs.lsp").on_attach,  -- Correct reference to on_attach
+                on_attach = require("configs.lsp").on_attach,
                 settings = {
                     showTodos = true,
                 },
             }
         }
+    end,
+	},
+
+	-- Color schemes
+  { "rebelot/kanagawa.nvim" },
+	{
+		"scottmckendry/cyberdream.nvim",
+    config = function()
+      vim.cmd("colorscheme cyberdream")
     end,
 	}
 }
