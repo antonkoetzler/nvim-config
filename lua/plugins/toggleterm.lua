@@ -9,7 +9,7 @@ return {
 			start_in_insert = true,
 			insert_mappings = true,
 			terminal_mappings = true,
-			shell = 'C:\\Program Files\\Git\\bin\\bash.exe',
+			shell = '"C:\\Program Files\\Git\\bin\\bash.exe"',
 		}
 	end,
 }
