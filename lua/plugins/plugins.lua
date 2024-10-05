@@ -7,4 +7,5 @@ return {
 	require('plugins.vim-commentary'),
 	require('plugins.nvim-cmp'),
 	require('plugins.nvim-dev-webicons'),
+	require('plugins.nvim-window-picker'),
 }
