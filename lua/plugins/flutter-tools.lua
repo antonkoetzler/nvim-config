@@ -5,17 +5,17 @@ return {
 		'stevearc/dressing.nvim',
 	},
 	config = function()
-		require("flutter-tools").setup {
+		require('flutter-tools').setup {
 			widget_guides = {
 				enabled = true,
 			},
 			lsp = {
-				on_attach = require("configs.lsp").on_attach,
+				on_attach = require('configs.lsp').on_attach,
 				settings = {
 					lineLength = 160,
 					showTodos = true,
 				},
-			}
+			},
 		}
 	end,
 }

@@ -5,7 +5,7 @@ local function on_attach(client, bufnr)
 	vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gr', '<cmd>lua vim.lsp.buf.references()<CR>', opts)
 	vim.api.nvim_buf_set_keymap(bufnr, 'n', 'ga', '<cmd>lua vim.lsp.buf.code_action()<CR>', opts)
 
-	vim.api.nvim_create_autocmd("BufWritePre", {
+	vim.api.nvim_create_autocmd('BufWritePre', {
 		buffer = bufnr,
 		callback = function()
 			vim.lsp.buf.format({ bufnr = bufnr })

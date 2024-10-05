@@ -5,11 +5,10 @@ vim.o.expandtab = false
 vim.o.autoindent = true
 vim.o.smartindent = true
 vim.o.autoread = true
-vim.opt.colorcolumn = "160"
+vim.opt.colorcolumn = '160'
 
 -- Load lazy.nvim
-require("configs.lazy")
+require('configs.lazy')
 
 -- Load keymaps
-require("configs.keymaps")
-
+require('configs.keymaps')
