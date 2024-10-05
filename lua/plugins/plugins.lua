@@ -5,4 +5,5 @@ return {
 	require("plugins.kanagawa"),
 	require("plugins.toggleterm"),
 	require("plugins.vim-commentary"),
+	require("plugins.nvim-cmp"),
 }
