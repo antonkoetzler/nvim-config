@@ -3,6 +3,9 @@ return {
 	requires = { "nvim-tree/nvim-web-devicons" },
 	config = function()
 		require'nvim-tree'.setup {
+			git = {
+				enable = false,
+			},
 			view = {
 				side = 'right',
 			}
