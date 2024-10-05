@@ -6,12 +6,16 @@ return {
 	},
 	config = function()
 		require("flutter-tools").setup {
-		lsp = {
-			on_attach = require("configs.lsp").on_attach,
-			settings = {
-				showTodos = true,
+			widget_guides = {
+				enabled = true,
 			},
+			lsp = {
+				on_attach = require("configs.lsp").on_attach,
+				settings = {
+					lineLength = 160,
+					showTodos = true,
+				},
+			}
 		}
-	}
 	end,
 }
