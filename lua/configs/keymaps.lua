@@ -10,3 +10,6 @@ vim.api.nvim_set_keymap('n', '<leader>e', '<cmd>NvimTreeToggle<cr>', opts) -- Ac
 -- lualine
 vim.api.nvim_set_keymap('n', '<leader>t', '<cmd>tabnew<cr>', opts) -- Close a tab.
 vim.api.nvim_set_keymap('n', '<leader>x', '<cmd>bd<cr>', opts) -- Close a tab.
+
+-- General keymappings
+vim.api.nvim_set_keymap('i', '<C-H>', '<C-w>', opts) -- Ctrl + backspace
