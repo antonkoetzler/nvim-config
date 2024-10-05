@@ -9,8 +9,8 @@ if [[ "$OSTYPE" == "linux-gnu"* || "$OSTYPE" == "darwin"* ]]; then
 	mv nvim-config/ ~/.config/nvim
 	echo "nvim configuration installed in ~/.config/nvim"
 elif [[ "$OSTYPE" == "cygwin" || "$OSTYPE" == "msys" ]]; then
-	rm -rf $USERPROFILE/AppData/Local/nvim-data
-	mv nvim-config $USERPROFILE/AppData/Local/nvim-data
+	rm -rf $USERPROFILE/AppData/Local/nvim
+	mv nvim-config $USERPROFILE/AppData/Local/nvim
 	echo "nvim configuration installed in $USERPROFILE\AppData\Local\nvim"
 else
 	echo "Unknown operating system: $OSTYPE"
