@@ -17,7 +17,7 @@ return {
 					-- Add completion settings
 					completion = {
 						-- Exclude constructors from completion
-						completeFunctionCalls = true,
+						completeFunctionCalls = false,
 						exclude = {
 							'Constructor' -- Add 'Constructor' here to exclude constructor suggestions
 						},
