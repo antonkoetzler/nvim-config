@@ -22,6 +22,12 @@ return {
 							'Constructor' -- Add 'Constructor' here to exclude constructor suggestions
 						},
 					},
+          -- Formatting settings
+          formatting = {
+            format = function(item)
+              return item.label .. " (" .. item.detail .. ")"
+            end,
+          },
 				},
 			},
 		}
