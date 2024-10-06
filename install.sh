@@ -2,7 +2,7 @@
 
 # If you are on windows, run this script in git bash.
 
-git clone git@github.com:antonkoetzler/nvim-config
+git clone https://github.com/antonkoetzler/nvim-config.git
 
 if [[ "$OSTYPE" == "linux-gnu"* || "$OSTYPE" == "darwin"* ]]; then
 	rm -rf ~/config/.nvim
