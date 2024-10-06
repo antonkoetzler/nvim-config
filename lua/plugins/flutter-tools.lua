@@ -14,6 +14,14 @@ return {
 				settings = {
 					lineLength = 160,
 					showTodos = true,
+					-- Add completion settings
+					completion = {
+						-- Exclude constructors from completion
+						completeFunctionCalls = true,
+						exclude = {
+							'Constructor' -- Add 'Constructor' here to exclude constructor suggestions
+						},
+					},
 				},
 			},
 		}
