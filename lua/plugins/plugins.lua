@@ -9,4 +9,5 @@ return {
 	require('plugins.nvim-dev-webicons'),
 	require('plugins.nvim-window-picker'),
 	require('plugins.luasnip'),
+	require('plugins.flutter-tools'),
 }
