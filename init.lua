@@ -6,7 +6,7 @@ vim.o.autoindent = true
 vim.o.smartindent = true
 vim.o.autoread = true
 vim.o.wrap = false
-vim.opt.colorcolumn = '160'
+vim.o.colorcolumn = '160'
 
 -- Load lazy.nvim
 require('configs.lazy')
