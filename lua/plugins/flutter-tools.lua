@@ -22,6 +22,7 @@ return {
 							'Constructor' -- Add 'Constructor' here to exclude constructor suggestions
 						},
 					},
+          showPackageInfo = true, -- Enable package info display
 				},
 			},
 		}
