@@ -6,7 +6,7 @@ return {
 	require('plugins.vim-commentary'),
 	require('plugins.window-picker'),
 	require('plugins.nvim-cmp'),
-  require('plugins.github-theme'),
+  require('plugins.vim-nightfly-colors'),
 	require('plugins.nvim-dev-webicons'),
 	require('plugins.luasnip'),
 	require('plugins.flutter-tools'),
