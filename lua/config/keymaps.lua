@@ -14,5 +14,5 @@ vim.api.nvim_set_keymap('i', '<C-H>', '<C-w>', opts) -- Ctrl + backspace.
 -- Flutter
 vim.api.nvim_set_keymap('n', '<leader>fr', ':echo "FlutterReload"<cmd>FlutterReload<CR>', opts)
 vim.api.nvim_set_keymap('n', '<leader>fR', ':echo "FlutterRestart"<cmd>FlutterRestart<CR>', opts)
-vim.api.nvim_set_keymap('n', '<leader>fs', ':echo "FlutterRun"<cmd>FlutterRun<CR>', opts)
-vim.api.nvim_set_keymap('n', '<leader>fS', ':echo "FlutterRun --flavor dev"<cmd>FlutterRun --flavor dev<CR>', opts)
+vim.api.nvim_set_keymap('n', '<leader>fs', '<cmd>FlutterRun<CR>', opts)
+vim.api.nvim_set_keymap('n', '<leader>fS', '<cmd>FlutterRun --flavor dev<CR>', opts)
