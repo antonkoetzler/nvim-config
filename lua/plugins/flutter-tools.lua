@@ -20,7 +20,7 @@ return {
           vim.api.nvim_buf_set_keymap(bufnr, 'n', '<leader>fr', '<cmd>FlutterReload<CR>', opts)
           vim.api.nvim_buf_set_keymap(bufnr, 'n', '<leader>fR', '<cmd>FlutterRestart<CR>', opts)
           vim.api.nvim_buf_set_keymap(bufnr, 'n', '<leader>fs', '<cmd>FlutterRun<CR>', opts)
-          vim.api.nvim_buf_set_keymap(bufnr, 'n', '<leader>fS', '<cmd>FlutterRun --flavor dev', opts)
+          vim.api.nvim_buf_set_keymap(bufnr, 'n', '<leader>fS', '<cmd>FlutterRun --flavor dev<CR>', opts)
 
           vim.api.nvim_create_autocmd('BufWritePre', {
             buffer = bufnr,
