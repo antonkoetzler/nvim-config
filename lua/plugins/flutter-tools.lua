@@ -30,6 +30,10 @@ return {
           showTodos = true,
         },
       },
+      -- flutter_run_args = {
+      --   "--flavor",
+      --   "dev",
+      -- },
     })
   end
 }
