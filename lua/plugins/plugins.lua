@@ -7,6 +7,8 @@ return {
   require('plugins.telescope'),
   require('plugins.nvim-tree'),
   require('plugins.nvim-web-devicons'),
+  require('plugins.nvim-window-picker'),
+  require('plugins.lualine'),
 
   -- Flutter
   require('plugins.flutter-tools'),
