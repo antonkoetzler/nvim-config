@@ -17,6 +17,9 @@ return {
           vim.api.nvim_buf_set_keymap(bufnr, 'n', 'ga', '<cmd>lua vim.lsp.buf.code_action()<CR>', opts)
           vim.api.nvim_buf_set_keymap(bufnr, 'n', 'ge', '<cmd>lua vim.diagnostic.goto_next()<CR>', opts)
 
+          vim.api.nvim_buf_set_keymap(bufnr, 'n', '<leader>fr', '<cmd>FlutterReload<CR>', opts)
+          vim.api.nvim_buf_set_keymap(bufnr, 'n', '<leader>fR', '<cmd>FlutterRestart<CR>', opts)
+
           vim.api.nvim_create_autocmd('BufWritePre', {
             buffer = bufnr,
             callback = function()
