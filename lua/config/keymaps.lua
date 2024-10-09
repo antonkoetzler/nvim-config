@@ -10,3 +10,5 @@ vim.api.nvim_set_keymap('n', '<leader>e', '<cmd>NvimTreeToggle<cr>', opts)      
 
 -- General keymappings
 vim.api.nvim_set_keymap('i', '<C-H>', '<C-w>', opts)                              -- Ctrl + backspace.
+
+-- Flutter
