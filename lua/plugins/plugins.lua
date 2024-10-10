@@ -9,7 +9,7 @@ return {
   require('plugins.nvim-web-devicons'),
   require('plugins.nvim-window-picker'),
   require('plugins.lualine'),
-  require('plugins.buffertabs'),
+  require('plugins.bufferline'),
   require('plugins.dressing'),
 
   -- Flutter
