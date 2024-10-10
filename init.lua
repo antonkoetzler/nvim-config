@@ -7,6 +7,7 @@ vim.o.smartindent = true
 vim.o.autoread = true
 vim.o.wrap = false
 vim.o.colorcolumn = '160'
+vim.o.hlsearch = false
 
 require('config.lazy')
 require('config.keymaps')
