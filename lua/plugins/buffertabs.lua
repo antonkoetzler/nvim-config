@@ -5,7 +5,9 @@ return {
     },
     config = function()
       require('buffertabs').setup({
+        border = 'none',
         show_id = true,
+        horizontal = 'left',
       })
     end,
 }
