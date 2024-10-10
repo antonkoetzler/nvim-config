@@ -11,6 +11,7 @@ return {
       },
       view = {
         side = 'right',
+        adaptive_size = true,
       },
       actions = {
         open_file = {
@@ -32,6 +33,11 @@ return {
       diagnostics = {
         enable = true,
         show_on_dirs = true,
+      },
+      update_focused_file = {
+        enable = true,     -- Enable focusing on the current file
+        update_cwd = true, -- Update the tree to match the current working directory
+        ignore_list = {},  -- List of file types to ignore (optional)
       },
     })
   end,
