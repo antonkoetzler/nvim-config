@@ -8,6 +8,8 @@ vim.o.autoread = true
 vim.o.wrap = false
 vim.o.colorcolumn = '160'
 vim.o.hlsearch = false
+vim.opt.relativenumber = true
+vim.opt.cursorline = true
 
 require('config.lazy')
 require('config.keymaps')
