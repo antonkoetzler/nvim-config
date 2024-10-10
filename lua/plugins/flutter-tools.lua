@@ -4,6 +4,7 @@ return {
     'nvim-lua/plenary.nvim',
     'hrsh7th/nvim-cmp',
     'hrsh7th/cmp-nvim-lsp',
+    'stevearc/dressing.nvim',
   },
   config = function()
     require('flutter-tools').setup({
@@ -30,9 +31,13 @@ return {
           showTodos = true,
         },
       },
+      widget_guides = {
+        enabled = true,
+      },
       dev_log = {
         open_cmd = 'botright 15split new'
       },
     })
   end,
+
 }

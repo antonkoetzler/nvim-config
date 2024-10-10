@@ -10,6 +10,7 @@ return {
   require('plugins.nvim-window-picker'),
   require('plugins.lualine'),
   require('plugins.buffertabs'),
+  require('plugins.dressing'),
 
   -- Flutter
   require('plugins.flutter-tools'),
