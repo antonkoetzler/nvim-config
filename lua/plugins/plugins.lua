@@ -17,6 +17,7 @@ return {
   -- Flutter
   require('plugins.flutter-tools'),
 
-  -- Color scheme
+  -- Color scheme (default is catppuccin)
   require('plugins.vim-nightfly-colors'),
+  require('plugins.catppuccin'),
 }
