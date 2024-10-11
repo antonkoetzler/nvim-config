@@ -7,6 +7,12 @@ vim.api.nvim_set_keymap('n', '<leader>x', '<cmd>tabclose<CR>', opts) -- Close a 
 vim.api.nvim_set_keymap('n', '<leader>n', '<cmd>tabnext<CR>', opts)  -- Move to the previous tab
 vim.api.nvim_set_keymap('n', '<leader>p', '<cmd>tabprev<CR>', opts)  -- Move to the next tab
 
+-- Harpoon
+vim.api.nvim_set_keymap('n', '<leader>ha', ':lua require(\'harpoon.mark\').add_file()<CR>', opts)
+vim.api.nvim_set_keymap('n', '<leader>hr', ':lua require(\'harpoon.mark\').rm_file()<CR>', opts)
+vim.api.nvim_set_keymap('n', '<leader>hm', ':Telescope harpoon marks<CR>', opts)
+
+
 -- telescope
 vim.api.nvim_set_keymap('n', '<leader>ff', '<cmd>Telescope find_files<CR>', opts) -- Find files.
 vim.api.nvim_set_keymap('n', '<leader>fg', '<cmd>Telescope live_grep<CR>', opts)  -- Grep for text.
