@@ -14,4 +14,5 @@ vim.opt.cursorline = true
 require('config.lazy')
 require('config.keymaps')
 
-vim.cmd('colorscheme catppuccin')
+vim.cmd('colorscheme nightfly')
+-- vim.cmd('colorscheme catppuccin')
