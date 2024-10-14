@@ -10,6 +10,7 @@ vim.o.colorcolumn = '160'
 vim.o.hlsearch = false
 vim.opt.relativenumber = true
 vim.opt.cursorline = true
+vim.opt.bufhidden = 'wipe'
 
 require('config.lazy')
 require('config.keymaps')
