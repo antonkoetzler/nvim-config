@@ -16,6 +16,7 @@ return {
   require('plugins.harpoon'),            -- Quicker file navigation than telescope, however used in conjunction with telescope.
   require('plugins.bufferline'),         -- Shows a list of active buffers at the top of the screen.
   require('plugins.scope'),              -- Separates buffers in bufferline to only display buffers on said tab.
+  require('plugins.vim-fugitive'),       -- Git services (I use it to resolve merge conflicts).
 
   -- Flutter
   require('plugins.flutter-tools'),
