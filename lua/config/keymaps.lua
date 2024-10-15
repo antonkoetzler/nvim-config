@@ -11,7 +11,7 @@ vim.api.nvim_set_keymap('n', '<leader>p', '<cmd>bp<CR>', opts)        -- Move to
 vim.api.nvim_set_keymap('n', '<leader>n', '<cmd>bn<CR>', opts)        -- Move to the next buffer.
 
 -- bufferline
-vim.api.nvim_set_keymap('n', '<leader>X', '<cmd>BufferLinePickClose<CR>', opts) -- Select a specific buffer to close.
+vim.api.nvim_set_keymap('n', '<leader>d', '<cmd>BufferLinePickClose<CR>', opts) -- Select a specific buffer to close.
 
 -- Harpoon
 vim.api.nvim_set_keymap('n', '<leader>ha', ':lua require(\'harpoon.mark\').add_file()<CR>', opts)
