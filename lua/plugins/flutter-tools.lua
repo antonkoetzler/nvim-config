@@ -27,7 +27,7 @@ return {
           })
 
           -- Keep LSP active in unfocused buffers.
-          vim.api.nvim_create_autocmd('BufLeave', {
+          vim.api.nvim_create_autocmd({'BufLeave', 'BufEnter'}, {
             pattern = '*.dart',
             callback = function()
               local bufnr = vim.fn.bufnr()
