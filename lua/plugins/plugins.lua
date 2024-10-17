@@ -21,7 +21,7 @@ return {
   require('plugins.vim-fugitive'),       -- Git services (I use it to resolve merge conflicts).
   require('plugins.transparent'),        -- Transparent background.
   require('plugins.dashboard'),          -- Startup screen.
-  require('lua.plugins.kommentary'),     -- Multiline comments.
+  require('plugins.kommentary'),         -- Multiline comments.
 
   -- Flutter.
   require('plugins.flutter-tools'),
