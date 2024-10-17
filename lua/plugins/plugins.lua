@@ -6,6 +6,8 @@ return {
   require('plugins.cmp-nvim-lsp'),       -- LSP config for nvim-comp.
   require('plugins.cmp-buffer'),         -- nvim-cmp dependency for buffer text completion.
   require('plugins.cmp-path'),           -- nvim-cmp dependency for path completion.
+  require('plugins.mason'),              -- Automatic LSP installations.
+  require('plugins.lsp-zero'),           -- Good LSP defaults and easy installation.
   require('plugins.luasnip'),            -- Dependency for LSPs.
   require('plugins.telescope'),          -- Fuzzy finder & live grep.
   require('plugins.nvim-tree'),          -- File tree.
@@ -18,6 +20,8 @@ return {
   require('plugins.scope'),              -- Separates buffers in bufferline to only display buffers on said tab.
   require('plugins.vim-fugitive'),       -- Git services (I use it to resolve merge conflicts).
   require('plugins.transparent'),        -- Transparent background.
+  require('plugins.dashboard'),          -- Startup screen.
+  require('lua.plugins.kommentary'),     -- Multiline comments.
 
   -- Flutter.
   require('plugins.flutter-tools'),
