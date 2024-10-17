@@ -1,5 +1,5 @@
 -- LSP functionalities.
-return function(client, bufnr)
+return function(_, bufnr)
   local opts = { noremap = true, silent = true }
 
   vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gd', '<cmd>lua vim.lsp.buf.definition()<CR>', opts)
@@ -19,7 +19,6 @@ return function(client, bufnr)
   vim.api.nvim_create_autocmd({ 'BufLeave', 'BufEnter' }, {
     pattern = '*.dart',
     callback = function()
-      local bufnr = vim.fn.bufnr()
       local clients = vim.lsp.get_active_clients()
       for _, client in pairs(clients) do
         if client.attached_buffers[bufnr] then

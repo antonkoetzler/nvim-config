@@ -45,20 +45,5 @@ return {
       },
       on_attach = on_attach,
     })
-
-    local cmp = require('cmp')
-
-    -- cmp (autocompletion) setup.
-    cmp.setup({
-      sources = {
-        { name = 'nvim_lsp' },
-      },
-      snippet = {
-        expand = function(args)
-          vim.snippet.expand(args.body)
-        end,
-      },
-      mapping = cmp.mapping.preset.insert({}),
-    })
   end,
 }
