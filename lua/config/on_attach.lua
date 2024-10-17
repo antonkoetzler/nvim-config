@@ -16,9 +16,20 @@ return function(_, bufnr)
     end,
   })
 
-  vim.api.nvim_create_autocmd({ 'BufLeave', 'BufEnter' }, {
+  --[[ vim.api.nvim_create_autocmd({ 'BufLeave', 'BufEnter' }, {
     pattern = '*.dart',
     callback = function()
+      local clients = vim.lsp.get_active_clients()
+      for _, client in pairs(clients) do
+        if client.attached_buffers[bufnr] then
+          vim.lsp.buf_attach_client(bufnr, client.id)
+        end
+      end
+    end,
+  }) ]]
+
+  vim.api.nvim_create_autocmd({ 'BufLeave', 'BufEnter' }, {
+    callback = function(args)
       local clients = vim.lsp.get_active_clients()
       for _, client in pairs(clients) do
         if client.attached_buffers[bufnr] then
