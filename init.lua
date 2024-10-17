@@ -9,7 +9,6 @@ vim.o.colorcolumn = '160'                      -- Places a vertical line on colu
 vim.o.hlsearch = false                         -- Don't highlight every instance of what was searched.
 vim.o.relativenumber = true                    -- Only show line number in the file of the highlighted line.
 vim.o.bufhidden = 'wipe'                       -- Don't keep empty buffers when changing buffers.
-vim.cmd([[hi Normal guibg=NONE ctermbg=NONE]]) -- Transparent background.
 
 require('config.lazy')
 require('config.keymaps')

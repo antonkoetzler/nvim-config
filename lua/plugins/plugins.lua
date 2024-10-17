@@ -17,11 +17,12 @@ return {
   require('plugins.bufferline'),         -- Shows a list of active buffers at the top of the screen.
   require('plugins.scope'),              -- Separates buffers in bufferline to only display buffers on said tab.
   require('plugins.vim-fugitive'),       -- Git services (I use it to resolve merge conflicts).
+  require('plugins.transparent'),        -- Transparent background.
 
-  -- Flutter
+  -- Flutter.
   require('plugins.flutter-tools'),
 
-  -- Color scheme (default is catppuccin)
+  -- Color scheme.
   require('plugins.vim-nightfly-colors'),
   require('plugins.catppuccin'),
 }
