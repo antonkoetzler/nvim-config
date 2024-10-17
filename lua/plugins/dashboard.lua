@@ -1,18 +1,18 @@
 return {
-  'glepnir/dashboard-nvim',
+  'MeanderingProgrammer/dashboard.nvim',
   event = 'VimEnter',
+  dependencies = {
+    {
+      'MaximilianLloyd/ascii.nvim',
+      dependencies = { 'MunifTanjim/nui.nvim' },
+    },
+  },
   config = function()
     require('dashboard').setup({
-      theme = 'hyper',
-      config = {
-        header = {
-          '   ___   _  ____________  _  ____    _  ____  _  __________ _   ________  ___',
-          '  / _ | / |/ /_  __/ __ \\/ |/ /\\ \\  ( )/ __/ / |/ / __/ __ \\ | / /  _/  |/  /',
-          ' / __ |/    / / / / /_/ /    /  \\ \\ |/_\\ \\  /    / _// /_/ / |/ // // /|_/ / ',
-          '/_/ |_/_/|_/ /_/  \\____/_/|_/    \\_\\ /___/ /_/|_/___/\\____/|___/___/_/  /_/  ',
-          '',
-        },
-        disable_move = true,
+      header = require('ascii').art.animals.cats.luna,
+      footer = {
+        '',
+        'ANTON\'S NVIM',
       },
     })
   end,

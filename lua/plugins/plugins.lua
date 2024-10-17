@@ -20,8 +20,8 @@ return {
   require('plugins.scope'),              -- Separates buffers in bufferline to only display buffers on said tab.
   require('plugins.vim-fugitive'),       -- Git services (I use it to resolve merge conflicts).
   require('plugins.transparent'),        -- Transparent background.
-  require('plugins.dashboard'),          -- Startup screen.
   require('plugins.kommentary'),         -- Multiline comments.
+  require('plugins.dashboard'),          -- Dashboard.
 
   -- Flutter.
   require('plugins.flutter-tools'),
