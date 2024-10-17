@@ -5,7 +5,6 @@ vim.o.autoindent = true     -- Preserves previous line's indent.
 vim.o.smartindent = true    -- Indets on {.
 vim.o.autoread = true       -- Reload file when it is editted outside of nvim.
 vim.o.wrap = false          -- Don't wrap text when it doesn't fit on the screen.
-vim.o.colorcolumn = '160'   -- Places a vertical line on column 160.
 vim.o.hlsearch = false      -- Don't highlight every instance of what was searched.
 vim.o.relativenumber = true -- Only show line number in the file of the highlighted line.
 vim.o.bufhidden = 'wipe'    -- Don't keep empty buffers when changing buffers.
