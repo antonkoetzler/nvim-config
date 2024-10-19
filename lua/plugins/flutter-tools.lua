@@ -14,6 +14,7 @@ return {
         settings = {
           lineLength = 160,
           showTodos = true,
+          completeFunctionCalls = false, -- Autocompletes where it completes the arguments of a method/constructor.
         },
       },
       widget_guides = {

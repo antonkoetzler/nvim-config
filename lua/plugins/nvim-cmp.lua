@@ -18,7 +18,13 @@ return {
         ['<C-y>'] = cmp.mapping.confirm({ select = true }),
       },
       sources = {
-        { name = 'nvim_lsp' },
+        {
+          name = 'nvim_lsp',
+          entry_filter = function(entry)
+            -- Disables autocomplete items like constructors/functions that autofill the arguments when selected.
+            return entry.completion_item.kind ~= 4
+          end,
+        },
         { name = 'buffer' },
         { name = 'path' },
         { name = 'luasnip' },
