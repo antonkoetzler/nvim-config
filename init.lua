@@ -9,6 +9,7 @@ vim.o.hlsearch = false      -- Don't highlight every instance of what was search
 vim.o.relativenumber = true -- Only show line number in the file of the highlighted line.
 vim.o.bufhidden = 'wipe'    -- Don't keep empty buffers when changing buffers.
 vim.o.signcolumn = 'yes'    -- Reserve a space in the gutter.
+vim.o.splitright = true     -- When vsplit is used, it focuses on the new split on the right.
 
 require('config.lazy')
 require('config.keymaps')
