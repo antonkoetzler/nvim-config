@@ -19,6 +19,7 @@ return {
   require('plugins.bufferline'),         -- Shows a list of active buffers at the top of the screen.
   require('plugins.scope'),              -- Separates buffers in bufferline to only display buffers on said tab.
   require('plugins.vim-fugitive'),       -- Git services (I use it to resolve merge conflicts).
+  require('plugins.nvim-spectre'),       -- Multifile renames.
   require('plugins.transparent'),        -- Transparent background.
   require('plugins.kommentary'),         -- Multiline comments.
   require('plugins.dashboard'),          -- Dashboard.

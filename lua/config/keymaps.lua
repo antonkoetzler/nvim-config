@@ -1,4 +1,4 @@
-local opts = { noremap=true, silent=true }
+local opts = { noremap = true, silent = true }
 
 -- General keymappings
 vim.api.nvim_set_keymap('i', '<C-H>', '<C-w>', opts)                  -- Ctrl + backspace.
@@ -25,6 +25,12 @@ vim.api.nvim_set_keymap('n', '<leader>fh', '<cmd>Telescope buffers<CR>', opts)  
 
 -- nvim-tree
 vim.api.nvim_set_keymap('n', '<leader>e', '<cmd>NvimTreeToggle<cr>', opts) -- Activate file tree.
+
+-- nvim-spectre
+vim.api.nvim_set_keymap('n', '<leader>S', '<cmd>lua require("spectre").toggle()<CR>', opts)
+vim.api.nvim_set_keymap('n', '<leader>sw', '<cmd>lua require("spectre").open_visual({select_word=true})<CR>', opts)
+vim.api.nvim_set_keymap('v', '<leader>sw', '<esc><cmd>lua require("spectre").open_visual()<CR>', opts)
+vim.api.nvim_set_keymap('n', '<leader>sp', '<cmd>lua require("spectre").open_file_search({select_word=true})<CR>', opts)
 
 -- Flutter
 vim.api.nvim_set_keymap('n', '<leader>fr', '<cmd>FlutterReload<CR>', opts)           -- Hot reload.
