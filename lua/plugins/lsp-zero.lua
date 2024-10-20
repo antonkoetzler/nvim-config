@@ -22,6 +22,11 @@ return {
       require('cmp_nvim_lsp').default_capabilities()
     )
 
+    -- Go.
+    lspconfig.gopls.setup({
+      on_attach = on_attach,
+    })
+
     -- Lua.
     lspconfig.lua_ls.setup({
       settings = {
