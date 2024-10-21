@@ -24,7 +24,17 @@ return {
 
     -- Go.
     lspconfig.gopls.setup({
-      on_attach = on_attach,
+      on_attach = function(cliente, bufnr)
+        on_attach(cliente, bufnr)
+        vim.api.nvim_buf_set_option(bufnr, 'tabstop', 4)
+        vim.api.nvim_buf_set_option(bufnr, 'shiftwidth', 4)
+        vim.api.nvim_buf_set_option(bufnr, 'expandtab', false)
+      end,
+      settings = {
+        gopls = {
+          gofumpt = true, -- Enables gofumpt stricter formatting
+        },
+      },
     })
 
     -- Lua.
