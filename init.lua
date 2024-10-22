@@ -10,6 +10,7 @@ vim.o.relativenumber = true -- Only show line number in the file of the highligh
 vim.o.bufhidden = 'wipe'    -- Don't keep empty buffers when changing buffers.
 vim.o.signcolumn = 'yes'    -- Reserve a space in the gutter.
 vim.o.splitright = true     -- When vsplit is used, it focuses on the new split on the right.
+vim.o.hidden = true         -- Closing buffer in second tab issue.
 
 require('config.lazy')
 require('config.keymaps')
