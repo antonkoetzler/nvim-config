@@ -10,15 +10,10 @@ return {
     -- Lua.
     lspconfig.lua_ls.setup({
       on_attach = on_attach,
-    })
-
-    -- Dart.
-    lspconfig.dartls.setup({
-      on_attach = on_attach,
       settings = {
-        dart = {
-          widgetGuides = {
-            enabled = true,
+        Lua = {
+          diagnostics = {
+            globals = { 'vim' },
           },
         },
       },
