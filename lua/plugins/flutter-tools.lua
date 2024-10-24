@@ -1,6 +1,8 @@
 return {
   'akinsho/flutter-tools.nvim',
   dependencies = {
+    'hrsh7th/nvim-cmp',
+    'neovim/nvim-lspconfig',
     'nvim-lua/plenary.nvim',
     'stevearc/dressing.nvim',
   },
