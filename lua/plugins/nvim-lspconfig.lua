@@ -18,5 +18,18 @@ return {
         },
       },
     })
+
+    -- Go LSP setup (gopls)
+    lspconfig.gopls.setup({
+      on_attach = on_attach,
+      settings = {
+        gopls = {
+          analyses = {
+            unusedparams = true,
+          },
+          staticcheck = true,
+        },
+      },
+    })
   end,
 }
