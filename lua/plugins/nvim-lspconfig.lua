@@ -21,7 +21,12 @@ return {
 
     -- Go LSP setup (gopls)
     lspconfig.gopls.setup({
-      on_attach = on_attach,
+      on_attach = function(cliente, bufnr)
+        on_attach(cliente, bufnr)
+        vim.bo[bufnr].expandtab = false
+        vim.bo[bufnr].tabstop = 4
+        vim.bo[bufnr].shiftwidth = 4
+      end,
       settings = {
         gopls = {
           analyses = {
