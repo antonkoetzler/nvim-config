@@ -27,7 +27,7 @@ require('lazy').setup({
   require('plugins.flutter-tools'),   -- LSP & other goodies for Flutter.
   require('plugins.git-blame'),       -- Git blame on lines.
   require('plugins.bufferline'),      -- Buffer tab bar.
-  require('plugins.neotree'),         -- File tree/explorer plugin.
+  require('plugins.nvim-tree'),       -- File tree.
 
   -- Color schemes.
   require('plugins.vim-moonfly-colors'),
