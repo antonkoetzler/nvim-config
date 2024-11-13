@@ -16,6 +16,7 @@ vim.api.nvim_set_keymap('n', '<leader>tp', '<cmd>tabprev<cr>', opts)  -- Move to
 vim.api.nvim_set_keymap('n', '<leader>x', '<cmd>bd<cr>', opts)        -- Delete a buffer.
 vim.api.nvim_set_keymap('n', '<leader>p', '<cmd>bp<cr>', opts)        -- Move to the previous buffer.
 vim.api.nvim_set_keymap('n', '<leader>n', '<cmd>bn<cr>', opts)        -- Move to the next buffer.
+vim.api.nvim_set_keymap('n', '<leader>v', '<cmd>vsplit<cr><C-w>w<cmd>bp<cr><C-w>', opts) -- Split a buffer to the right.
 
 -- bufferline.
 vim.api.nvim_set_keymap('n', '<leader>d', '<cmd>BufferLinePickClose<cr>', opts) -- Select a specific buffer to close.
