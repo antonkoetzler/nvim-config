@@ -10,9 +10,10 @@ return {
     require('nvim-tree').setup({
       view = {
         side = 'right',
+        adaptive_size = true,
       },
       git = {
-        enable = false,  -- Disable git status tracking
+        enable = false, -- Disable git status tracking
       },
     })
   end,
