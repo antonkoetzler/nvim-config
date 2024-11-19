@@ -8,10 +8,11 @@ return {
     require('bufferline').setup({
       options = {
         mode = 'buffers',
-        diagnostic = "nvim_lsp", -- Shows LSP diagnostics in the bufferline
-        diagnostics_indicator = function(count, level, diagnostics, context)
+        diagnostic = "nvim_lsp",
+        diagnostics_indicator = function(count, _, __, ___)
           return "(" .. count .. ")"
         end,
+        max_name_length = 30,
       },
     })
   end,
