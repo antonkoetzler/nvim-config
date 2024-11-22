@@ -14,6 +14,10 @@ return {
       git = {
         enable = false, -- Disable git status tracking
       },
+      update_focused_file = {
+        enable = true,
+        update_cwd = true,
+      },
       diagnostics = {
         enable = true,
         show_on_dirs = true,
