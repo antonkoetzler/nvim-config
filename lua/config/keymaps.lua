@@ -2,13 +2,12 @@
 
 local opts = { noremap = true, silent = true }
 
-
 -- Leader keys.
 vim.g.mapleader = ' '
 vim.g.maplocalleader = '\\'
 
 -- General shortcuts.
-vim.api.nvim_set_keymap("v", "<C-c>", '"+y', opts)                                       -- Copy with Ctrl + C.
+vim.api.nvim_set_keymap('v', '<C-c>', '"+y', opts)                                       -- Copy with Ctrl + C.
 vim.api.nvim_set_keymap('i', '<C-Backspace>', '<C-w>', opts)                             -- Ctrl + backspace.
 vim.api.nvim_set_keymap('i', '<C-h>', '<C-w>', opts)                                     -- Ctrl + backspace.
 vim.api.nvim_set_keymap('n', '<leader>tc', '<cmd>tabnew<cr>', opts)                      -- Create a new tab.
