@@ -28,6 +28,7 @@ require('lazy').setup({
   require('plugins.git-blame'),       -- Git blame on lines.
   require('plugins.bufferline'),      -- Buffer tab bar.
   require('plugins.nvim-tree'),       -- File tree.
+  require('plugins.lualine'),         -- Footer with information about repo, OS, files, etc.
 
   -- Color schemes.
   require('plugins.vim-moonfly-colors'),
