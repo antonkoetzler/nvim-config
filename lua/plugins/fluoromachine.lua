@@ -7,7 +7,7 @@ return {
     local fm = require 'fluoromachine'
 
     fm.setup {
-      glow = true,
+      glow = false,
       theme = 'retrowave',
       transparent = true,
     }
