@@ -17,7 +17,7 @@ vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
   require('plugins.telescope'),       -- Good for file navegation (i.e. fuzzy searching, livegrep, etc).
-  require('plugins.vim-fugitive'),    -- Lots of git features; I mainly use to solve merge conflicts.
+  require('plugins/diffview'),        -- Git features that are alike to VSCode's, for example, merge resolver.
   require('plugins.scope'),           -- Separate buffers shown in telescope by tab.
   require('plugins.kommentary'),      -- Allows gc/gcc comments (for commenting lines of code) to work cross-platform.
   require('plugins.nvim-lspconfig'),  -- LSP: Base configuraiton plugin.
