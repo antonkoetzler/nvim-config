@@ -60,5 +60,10 @@ return {
     lspconfig.clangd.setup({
       on_attach = on_attach,
     });
+
+    -- PhP.
+    lspconfig.intelephense.setup({
+      on_attach = on_attach,
+    });
   end,
 }
