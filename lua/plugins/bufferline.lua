@@ -7,12 +7,9 @@ return {
   config = function()
     require('bufferline').setup({
       options = {
+        always_show_bufferline = false,
         mode = 'buffers',
-        diagnostic = "nvim_lsp",
-        diagnostics_indicator = function(count, _, __, ___)
-          return "(" .. count .. ")"
-        end,
-        max_name_length = 30,
+        max_name_length = 50,
       },
     })
   end,
