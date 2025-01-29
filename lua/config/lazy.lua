@@ -29,6 +29,7 @@ require('lazy').setup({
   require('plugins.bufferline'),      -- Buffer tab bar.
   require('plugins.nvim-tree'),       -- File tree.
   require('plugins.lualine'),         -- Footer with information about repo, OS, files, etc.
+  require('plugins.vim-bbye'),        -- Fix the stupid fucking issue of closing an entire new tab when closing one buffer in said tab.
 
   -- Color schemes.
   require('plugins.vim-moonfly-colors'),

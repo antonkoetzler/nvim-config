@@ -6,4 +6,3 @@
 # TODO
 
 1. Learn how to resolve merge conflicts with `diffview`;
-1. Fix the issue where closing a buffer in a second tab closes the entire tab.
