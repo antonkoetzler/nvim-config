@@ -7,7 +7,6 @@ return {
   config = function()
     require('bufferline').setup({
       options = {
-        always_show_bufferline = false,
         mode = 'buffers',
         max_name_length = 50,
       },
