@@ -18,6 +18,7 @@ vim.api.nvim_set_keymap('n', '<leader>x', '<cmd>Bdelete<cr>', opts)             
 vim.api.nvim_set_keymap('n', '<leader>p', '<cmd>bp<cr>', opts)                           -- Move to the previous buffer.
 vim.api.nvim_set_keymap('n', '<leader>n', '<cmd>bn<cr>', opts)                           -- Move to the next buffer.
 vim.api.nvim_set_keymap('n', '<leader>v', '<cmd>vsplit<cr><C-w>w<cmd>bp<cr><C-w>', opts) -- Split a buffer to the right.
+vim.api.nvim_set_keymap('n', '<Esc>', '<Esc>:noh<CR>', { silent = true })                -- Disables highlighted results of a search.
 
 -- bufferline.
 vim.api.nvim_set_keymap('n', '<leader>d', '<cmd>BufferLinePickClose<cr>', opts) -- Select a specific buffer to close.
