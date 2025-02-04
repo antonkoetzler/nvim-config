@@ -11,15 +11,14 @@ return {
 
     require('cmp').setup({
       window = {
-        completion = cmp.config.window.bordered({
-          border = 'rounded',
-          -- winhighlight = 'Normal:Normal,FloatBorder:FloatBorder,CursorLine:Visual,Search:None',
-          col_offset = -3,  -- No additional margin for content
-          side_padding = 0, -- No padding on sides
-        }),
-        documentation = cmp.config.window.bordered({
-          border = 'rounded',
-        }),
+        completion = {
+          winhighlight = "Normal:Normal,FloatBorder:CmpCompletionBorder,CursorLine:Pmenu",
+          border = "rounded",
+        },
+        documentation = {
+          winhighlight = "Normal:Normal,FloatBorder:CmpCompletionBorder",
+          border = "rounded",
+        },
       },
       mapping = {
         ['<C-n>'] = cmp.mapping.select_next_item(),
