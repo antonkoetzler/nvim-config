@@ -8,6 +8,8 @@ return {
   },
   config = function()
     require('nvim-tree').setup({
+      sync_root_with_cwd = false,
+      respect_buf_cwd = false,
       view = {
         adaptive_size = true,
       },
