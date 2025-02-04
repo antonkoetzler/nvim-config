@@ -13,7 +13,7 @@ return {
       window = {
         completion = cmp.config.window.bordered({
           border = 'rounded',
-          winhighlight = 'Normal:Normal,FloatBorder:FloatBorder,CursorLine:Visual,Search:None',
+          -- winhighlight = 'Normal:Normal,FloatBorder:FloatBorder,CursorLine:Visual,Search:None',
           col_offset = -3,  -- No additional margin for content
           side_padding = 0, -- No padding on sides
         }),
