@@ -35,4 +35,7 @@ require('lazy').setup({
   require('plugins.vim-moonfly-colors'),
   require('plugins.vim-nightfly-colors'),
   require('plugins.seoul256'),
+  require('plugins.kanagawa'),
+  require('plugins.tokyonight'),
+  require('plugins.bamboo'),
 })
