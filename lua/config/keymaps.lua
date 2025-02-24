@@ -7,18 +7,18 @@ vim.g.mapleader = ' '
 vim.g.maplocalleader = '\\'
 
 -- General shortcuts.
-vim.api.nvim_set_keymap('v', '<C-c>', '"+y', opts)                                       -- Copy with Ctrl + C.
-vim.api.nvim_set_keymap('i', '<C-Backspace>', '<C-w>', opts)                             -- Ctrl + backspace.
-vim.api.nvim_set_keymap('i', '<C-h>', '<C-w>', opts)                                     -- Ctrl + backspace.
-vim.api.nvim_set_keymap('n', '<leader>tc', '<cmd>tabnew<cr>', opts)                      -- Create a new tab.
-vim.api.nvim_set_keymap('n', '<leader>tx', '<cmd>tabclose<cr>', opts)                    -- Close a tab.
-vim.api.nvim_set_keymap('n', '<leader>tn', '<cmd>tabnext<cr>', opts)                     -- Move to the previous tab.
-vim.api.nvim_set_keymap('n', '<leader>tp', '<cmd>tabprev<cr>', opts)                     -- Move to the next tab.
-vim.api.nvim_set_keymap('n', '<leader>x', '<cmd>Bdelete<cr>', opts)                      -- Delete a buffer.
-vim.api.nvim_set_keymap('n', '<leader>p', '<cmd>bp<cr>', opts)                           -- Move to the previous buffer.
-vim.api.nvim_set_keymap('n', '<leader>n', '<cmd>bn<cr>', opts)                           -- Move to the next buffer.
-vim.api.nvim_set_keymap('n', '<leader>v', '<cmd>vsplit<cr><C-w>w<cmd>bp<cr><C-w>', opts) -- Split a buffer to the right.
-vim.api.nvim_set_keymap('n', '<Esc>', '<Esc>:noh<CR>', { silent = true })                -- Disables highlighted results of a search.
+vim.api.nvim_set_keymap('v', '<C-c>', '"+y', opts)                                  -- Copy with Ctrl + C.
+vim.api.nvim_set_keymap('i', '<C-Backspace>', '<C-w>', opts)                        -- Ctrl + backspace.
+vim.api.nvim_set_keymap('i', '<C-h>', '<C-w>', opts)                                -- Ctrl + backspace.
+vim.api.nvim_set_keymap('n', '<leader>tc', '<cmd>tabnew<cr>', opts)                 -- Create a new tab.
+vim.api.nvim_set_keymap('n', '<leader>tx', '<cmd>tabclose<cr>', opts)               -- Close a tab.
+vim.api.nvim_set_keymap('n', '<leader>tn', '<cmd>tabnext<cr>', opts)                -- Move to the previous tab.
+vim.api.nvim_set_keymap('n', '<leader>tp', '<cmd>tabprev<cr>', opts)                -- Move to the next tab.
+vim.api.nvim_set_keymap('n', '<leader>x', '<cmd>Bdelete<cr>', opts)                 -- Delete a buffer.
+vim.api.nvim_set_keymap('n', '<leader>p', '<cmd>bp<cr>', opts)                      -- Move to the previous buffer.
+vim.api.nvim_set_keymap('n', '<leader>n', '<cmd>bn<cr>', opts)                      -- Move to the next buffer.
+vim.api.nvim_set_keymap('n', '<leader>v', '<cmd>vsplit<cr><C-w>w<cmd>bp<cr>', opts) -- Split a buffer to the right.
+vim.api.nvim_set_keymap('n', '<Esc>', '<Esc>:noh<CR>', { silent = true })           -- Disables highlighted results of a search.
 
 -- bufferline.
 vim.api.nvim_set_keymap('n', '<leader>d', '<cmd>BufferLinePickClose<cr>', opts) -- Select a specific buffer to close.
