@@ -9,7 +9,7 @@ return {
         'ts_ls',
         -- 'intelephense',
         'phpactor',
-        'tailwindcss-language-server',
+        'tailwindcss',
       },
     })
   end,
