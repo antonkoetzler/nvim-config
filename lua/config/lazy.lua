@@ -31,6 +31,7 @@ require('lazy').setup({
   require('plugins.lualine'),         -- Footer with information about repo, OS, files, etc.
   require('plugins.vim-bbye'),        -- Fix the stupid fucking issue of closing an entire new tab when closing one buffer in said tab.
   require('plugins.vim-dadbod'),      -- Creates connection to databases to view and edit them.
+  require('plugins.toggleterm'),      -- Open terminals.
 
   -- Color schemes.
   require('plugins.vim-moonfly-colors'),

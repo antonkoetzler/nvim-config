@@ -32,3 +32,7 @@ vim.api.nvim_set_keymap('n', '<leader>fh', '<cmd>Telescope buffers<cr>', opts)  
 
 -- nvim-tree.
 vim.api.nvim_set_keymap('n', '<leader>e', '<cmd>NvimTreeToggle<cr>', opts)
+
+-- toggleterm.
+vim.api.nvim_set_keymap('n', '<C-t>', '<cmd>ToggleTerm<cr>', opts)
+vim.api.nvim_set_keymap('t', '<C-t>', '<cmd>ToggleTerm<cr>', opts)

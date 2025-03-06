@@ -20,4 +20,5 @@
 
 # TODO
 
-1. Install (toggleterm.nvim)[https://github.com/akinsho/toggleterm.nvim].
+1. Solve the no files open lsp dianostics issue;
+2. Markdown LSP that formats like with VSCode.
