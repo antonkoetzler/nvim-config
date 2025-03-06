@@ -17,13 +17,14 @@ vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
   require('plugins.telescope'),       -- Good for file navegation (i.e. fuzzy searching, livegrep, etc).
-  require('plugins/diffview'),        -- Git features that are alike to VSCode's, for example, merge resolver.
+  require('plugins.diffview'),        -- Git features that are alike to VSCode's, for example, merge resolver.
   require('plugins.scope'),           -- Separate buffers shown in telescope by tab.
   require('plugins.kommentary'),      -- Allows gc/gcc comments (for commenting lines of code) to work cross-platform.
   require('plugins.nvim-lspconfig'),  -- LSP: Base configuraiton plugin.
   require('plugins.mason'),           -- LSP: Language server installer.
   require('plugins.mason-lspconfig'), -- LSP: Automatically installs defined LSPs.
   require('plugins.nvim-cmp'),        -- LSP: suggestions & autocompletes.
+  require('plugins.proactive-lsp'),   -- LSP: Start LSPs without needing a file open.
   require('plugins.flutter-tools'),   -- LSP & other goodies for Flutter.
   require('plugins.git-blame'),       -- Git blame on lines.
   require('plugins.bufferline'),      -- Buffer tab bar.
