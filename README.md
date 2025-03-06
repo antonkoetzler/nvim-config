@@ -20,5 +20,5 @@
 
 # TODO
 
-1. Solve the no files open lsp dianostics issue (proactive-lsp plugin);
+1. Solve the no files open lsp dianostics issue (research workspace-dianostics.nvim and trouble package);
 2. Markdown LSP that formats like with VSCode.
