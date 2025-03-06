@@ -24,7 +24,6 @@ require('lazy').setup({
   require('plugins.mason'),           -- LSP: Language server installer.
   require('plugins.mason-lspconfig'), -- LSP: Automatically installs defined LSPs.
   require('plugins.nvim-cmp'),        -- LSP: suggestions & autocompletes.
-  require('plugins.proactive-lsp'),   -- LSP: Start LSPs without needing a file open.
   require('plugins.flutter-tools'),   -- LSP & other goodies for Flutter.
   require('plugins.git-blame'),       -- Git blame on lines.
   require('plugins.bufferline'),      -- Buffer tab bar.
