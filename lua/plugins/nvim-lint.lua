@@ -15,7 +15,7 @@ return {
 
     local lint_augroup = vim.api.nvim_create_augroup('lint', { clear = true })
 
-    vim.api.nvim_create_autocmd({ 'BufEnter', 'BufWritePost', 'InsertEnter' }, {
+    vim.api.nvim_create_autocmd({ 'BufEnter', 'BufWritePost', 'InsertLeave', 'TextChangedI' }, {
       pattern = { '*.md' },
       group = lint_augroup,
       callback = function()

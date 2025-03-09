@@ -10,12 +10,12 @@
 ## Resolving merge conflicts
 
 1. `:DiffviewOpen`;
-2. `[x` & `]x` to traverse conflicts;
-3. `2do` to accept ours, `3do`  to accept theirs;
-4. `:DiffviewClose` when finished resolving conflicts;
-5. `Save file`.
+1. `[x` & `]x` to traverse conflicts;
+1. `2do` to accept ours, `3do`  to accept theirs;
+1. `:DiffviewClose` when finished resolving conflicts;
+1. `Save file`.
 
-# Add a database connection
+## Add a database connection
 
 1. `:DBUI`;
-2. `Press enter on "Add connection"`.
+1. `Press enter on "Add connection"`.
