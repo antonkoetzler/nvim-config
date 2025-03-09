@@ -1,9 +1,11 @@
-# Installation
+# My Neovim configuration 💻
+
+## Installation
 
 1. Clone the repo into `~/.config` (Linux) or `C:\Users\<Username>\AppData\Local` (Windows);
 1. Make sure you have Go, Lua, Node, & Ripgrep installed.
 
-# How do do various things with my config
+## How do do various things with my config
 
 ## Resolving merge conflicts
 
@@ -13,12 +15,7 @@
 4. `:DiffviewClose` when finished resolving conflicts;
 5. `Save file`.
 
-## Add a database connection
+# Add a database connection
 
 1. `:DBUI`;
 2. `Press enter on "Add connection"`.
-
-# TODO
-
-1. Solve the no files open lsp dianostics issue (research workspace-dianostics.nvim and trouble package);
-2. Markdown LSP that formats like with VSCode.
