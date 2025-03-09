@@ -7,10 +7,10 @@ vim.g.mapleader = ' '
 vim.g.maplocalleader = '\\'
 
 -- General shortcuts.
-vim.api.nvim_set_keymap('v', '<C-c>', '"+y', opts)                        -- Copy with Ctrl + C.
-vim.api.nvim_set_keymap('i', '<C-Backspace>', '<C-w>', opts)              -- Ctrl + backspace.
-vim.api.nvim_set_keymap('i', '<C-h>', '<C-w>', opts)                      -- Ctrl + backspace.
-vim.api.nvim_set_keymap('n', '<Esc>', '<Esc>:noh<CR>', { silent = true }) -- Disables highlighted results of a search.
+vim.api.nvim_set_keymap('v', '<C-c>', '"+y', opts)           -- Copy with Ctrl + C.
+vim.api.nvim_set_keymap('i', '<C-Backspace>', '<C-w>', opts) -- Ctrl + backspace.
+vim.api.nvim_set_keymap('i', '<C-h>', '<C-w>', opts)         -- Ctrl + backspace.
+vim.api.nvim_set_keymap('n', '<Esc>', '<Esc>:noh<CR>', opts) -- Disables highlighted results of a search.
 
 -- Buffers.
 vim.api.nvim_set_keymap('n', '<leader>x', '<cmd>Bdelete<cr>', opts)                 -- Delete a buffer.
@@ -36,6 +36,12 @@ vim.api.nvim_set_keymap('t', '<leader>3', '<C-w>3w', opts)
 vim.api.nvim_set_keymap('t', '<leader>4', '<C-w>4w', opts)
 vim.api.nvim_set_keymap('t', '<leader>5', '<C-w>5w', opts)
 
+-- Split resizing.
+vim.api.nvim_set_keymap('n', '<A-l>', '<C-w>10<', opts) -- Resize 10px leftward
+vim.api.nvim_set_keymap('n', '<A-h>', '<C-w>10>', opts) -- Resize 10px rightward
+vim.api.nvim_set_keymap('n', '<A-l>', '<C-w>+', opts)   -- Resize downward
+vim.api.nvim_set_keymap('n', '<A-l>', '<C-w>-', opts)   -- Resize downward
+
 -- bufferline.
 vim.api.nvim_set_keymap('n', '<leader>d', '<cmd>BufferLinePickClose<cr>', opts) -- Select a specific buffer to close.
 vim.api.nvim_set_keymap('n', '<leader>op', '<cmd>BufferLineMovePrev<cr>', opts) -- Moves the selected buffer to the left of the buffer line.
@@ -50,6 +56,14 @@ vim.api.nvim_set_keymap('n', '<leader>fh', '<cmd>Telescope buffers<cr>', opts)  
 vim.api.nvim_set_keymap('n', '<leader>e', '<cmd>NvimTreeToggle<cr>', opts)
 
 -- Terminal (and toggleterm).
+local term_count = 0
+function _G.new_terminal()
+  term_count = term_count + 1
+  vim.cmd(term_count .. 'ToggleTerm direction=tab')
+end
+
 vim.api.nvim_set_keymap('t', '<Esc>', '<C-\\><C-n>', opts)
-vim.api.nvim_set_keymap('n', '<C-t>', '<cmd>ToggleTerm directory=tab<cr>', opts)
-vim.api.nvim_set_keymap('t', '<C-t>', '<cmd>ToggleTerm directory=tab<cr>', opts)
+vim.api.nvim_set_keymap('n', '<C-t>', '<cmd>ToggleTerm direction=tab<CR>', opts)        -- Toggle terminal (creates a new one or opens existing terminal).
+vim.api.nvim_set_keymap('t', '<C-t>', '<cmd>ToggleTerm direction=tab<CR>', opts)        -- Toggle terminal (creates a new one or opens existing terminal).
+vim.api.nvim_set_keymap('n', '<C-A-t>', '<cmd>lua new_terminal()<CR>', opts)            -- Create new terminal(s).
+vim.api.nvim_set_keymap('t', '<C-A-t>', '<C-\\><C-n><cmd>lua new_terminal()<CR>', opts) -- Create new terminal(s).
