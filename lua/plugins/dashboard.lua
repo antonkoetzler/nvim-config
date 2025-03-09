@@ -1,26 +1,15 @@
 return {
   'goolord/alpha-nvim',
-  dependencies = { 'nvim-tree/nvim-web-devicons' },
+  dependencies = {
+    'nvim-tree/nvim-web-devicons',
+    'MaximilianLloyd/ascii.nvim',
+  },
   config = function()
-    local startify = require('alpha.themes.startify')
-    -- available: devicons, mini, default is mini
-    -- if provider not loaded and enabled is true, it will try to use another provider
-    startify.file_icons.provider = 'devicons'
-
-    -- Generate ASCII header from text
     local dashboard = require('alpha.themes.dashboard')
-    startify.section.header.val = dashboard.section.header.val
-    startify.section.header.val = {
-      [[                                                 ]],
-      [[  █████╗ ███╗   ██╗████████╗ ██████╗ ███╗   ██╗███████╗    ███╗   ██╗███████╗ ██████╗ ██╗   ██╗██╗███╗   ███╗ ]],
-      [[ ██╔══██╗████╗  ██║╚══██╔══╝██╔═══██╗████╗  ██║██╔════╝    ████╗  ██║██╔════╝██╔═══██╗██║   ██║██║████╗ ████║ ]],
-      [[ ███████║██╔██╗ ██║   ██║   ██║   ██║██╔██╗ ██║███████╗    ██╔██╗ ██║█████╗  ██║   ██║██║   ██║██║██╔████╔██║ ]],
-      [[ ██╔══██║██║╚██╗██║   ██║   ██║   ██║██║╚██╗██║╚════██║    ██║╚██╗██║██╔══╝  ██║   ██║╚██╗ ██╔╝██║██║╚██╔╝██║ ]],
-      [[ ██║  ██║██║ ╚████║   ██║   ╚██████╔╝██║ ╚████║███████║    ██║ ╚████║███████╗╚██████╔╝ ╚████╔╝ ██║██║ ╚═╝ ██║ ]],
-      [[ ╚═╝  ╚═╝╚═╝  ╚═══╝   ╚═╝    ╚═════╝ ╚═╝  ╚═══╝╚══════╝    ╚═╝  ╚═══╝╚══════╝ ╚═════╝   ╚═══╝  ╚═╝╚═╝     ╚═╝ ]],
-      [[                                                 ]],
-    }
+    local ascii = require('ascii')
+    -- dashboard.section.header.val = dashboard.section.header.val
+    dashboard.section.header.val = ascii.art.animals.cats.luna
 
-    require('alpha').setup(startify.opts)
+    require('alpha').setup(dashboard.opts)
   end,
 }
