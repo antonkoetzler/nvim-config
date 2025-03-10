@@ -7,7 +7,7 @@
 
 ## How do do various things with my config
 
-### Resolving merge conflicts
+#### Resolving merge conflicts
 
 1. `:DiffviewOpen`;
 1. `[x` & `]x` to traverse conflicts;
@@ -15,7 +15,7 @@
 1. `:DiffviewClose` when finished resolving conflicts;
 1. `Save file`.
 
-### Add a database connection
+#### Add a database connection
 
 1. `:DBUI`;
 1. `Press enter on "Add connection"`.
