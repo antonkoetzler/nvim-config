@@ -10,7 +10,6 @@ return {
         -- 'intelephense',
         'phpactor',
         'tailwindcss',
-        'markdownlint-cli2',
       },
     })
   end,
