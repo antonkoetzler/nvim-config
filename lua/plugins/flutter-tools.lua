@@ -12,7 +12,7 @@ return {
       lsp = {
         on_attach = require('config.on_attach'),
         settings = {
-          lineLength = 160,              -- Default line length.
+          lineLength = 80,               -- Default line length.
           showTodos = true,              -- Highlights // TODO.
           completeFunctionCalls = false, -- Autocompletes where it completes the arguments of a method/constructor.
         },
