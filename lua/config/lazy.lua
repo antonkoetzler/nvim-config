@@ -28,7 +28,7 @@ require('lazy').setup({
   require('plugins.conform'),         -- FORMATTER: For more specific cases where our LSP plugins do poorly in (i.e. markdown).
   require('plugins.nvim-lint'),       -- LINTER: For more specific cases where our LSP plugins do poorly in (i.e. markdown).
   require('plugins.git-blame'),       -- Git blame on lines.
-  require('plugins.bufferline'),      -- Buffer tab bar.
+  -- require('plugins.bufferline'),      -- Buffer tab bar.
   require('plugins.nvim-tree'),       -- File tree.
   -- require('plugins.lualine'),         -- Footer with information about repo, OS, files, etc.
   require('plugins.vim-bbye'),        -- Fix the stupid fucking issue of closing an entire new tab when closing one buffer in said tab.
