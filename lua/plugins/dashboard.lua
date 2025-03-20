@@ -46,6 +46,19 @@ return {
     }
     dashboard.section.buttons.val = {}
 
+    -- Calculate top padding to vertically center the header
+    local header_height = #dashboard.section.header.val
+    local total_lines = vim.o.lines or 24
+    local padding_top = math.floor((total_lines - header_height) / 2)
+
+    dashboard.config.layout = {
+      { type = "padding", val = padding_top },
+      dashboard.section.header,
+      --[[ { type = "padding", val = 2 },
+      dashboard.section.buttons, ]]
+    }
+
     require('alpha').setup(dashboard.opts)
   end,
 }
+
