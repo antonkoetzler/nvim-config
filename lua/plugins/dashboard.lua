@@ -6,7 +6,6 @@ return {
   },
   config = function()
     local dashboard = require('alpha.themes.dashboard')
-    local ascii = require('ascii')
 
     dashboard.section.header.val = {
       "              ,                                  ",
@@ -49,13 +48,25 @@ return {
     -- Calculate top padding to vertically center the header
     local header_height = #dashboard.section.header.val
     local total_lines = vim.o.lines or 24
-    local padding_top = math.floor((total_lines - header_height) / 2)
+
+    -- If the terminal is too small, let's avoid padding issues by clamping it
+    local max_padding = math.floor((total_lines - header_height) / 2)
+    local padding_top = math.max(max_padding, 0)
+    local available_space = total_lines - header_height
+
+    -- If padding top is larger than available space, we reduce it to fit the terminal size
+    if padding_top > available_space then
+      padding_top = available_space
+    end
+
+    -- If we still don't have enough space, we will skip the padding altogether
+    if total_lines < header_height then
+      padding_top = 0
+    end
 
     dashboard.config.layout = {
       { type = "padding", val = padding_top },
       dashboard.section.header,
-      --[[ { type = "padding", val = 2 },
-      dashboard.section.buttons, ]]
     }
 
     require('alpha').setup(dashboard.opts)
