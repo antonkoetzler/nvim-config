@@ -39,8 +39,8 @@ vim.api.nvim_set_keymap('t', '<leader>5', '<C-w>5w', opts)
 -- Split resizing.
 vim.api.nvim_set_keymap('n', '<A-l>', '<C-w>10<', opts) -- Resize 10px leftward
 vim.api.nvim_set_keymap('n', '<A-h>', '<C-w>10>', opts) -- Resize 10px rightward
-vim.api.nvim_set_keymap('n', '<A-l>', '<C-w>+', opts)   -- Resize downward
-vim.api.nvim_set_keymap('n', '<A-l>', '<C-w>-', opts)   -- Resize downward
+vim.api.nvim_set_keymap('n', '<A-j>', '<C-w>+', opts)   -- Resize downward
+vim.api.nvim_set_keymap('n', '<A-k>', '<C-w>-', opts)   -- Resize downward
 
 -- bufferline.
 vim.api.nvim_set_keymap('n', '<leader>d', '<cmd>BufferLinePickClose<cr>', opts) -- Select a specific buffer to close.
