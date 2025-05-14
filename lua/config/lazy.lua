@@ -24,7 +24,8 @@ require('lazy').setup({
   require('plugins.mason'),           -- LSP: Language server installer.
   require('plugins.mason-lspconfig'), -- LSP: Automatically installs defined LSPs.
   require('plugins.nvim-cmp'),        -- LSP: suggestions & autocompletes.
-  require('plugins.flutter-tools'),   -- LSP & other goodies for Flutter.
+  require('plugins.flutter-tools'),   -- LSP: Flutter
+  require('plugins.nvim-jdtls'),      -- LSP: Java
   require('plugins.conform'),         -- FORMATTER: For more specific cases where our LSP plugins do poorly in (i.e. markdown).
   require('plugins.nvim-lint'),       -- LINTER: For more specific cases where our LSP plugins do poorly in (i.e. markdown).
   require('plugins.git-blame'),       -- Git blame on lines.
