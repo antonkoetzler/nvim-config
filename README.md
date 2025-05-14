@@ -2,8 +2,8 @@
 
 ## Installation
 
-1. Clone the repo into `~/.config` (Linux) or `C:\Users\<Username>\AppData\Local` (Windows);
-1. Make sure you have Go, Lua, Node, & Ripgrep installed;
+1. Clone the repo into `~/.config` (Unix) or `C:\Users\<Username>\AppData\Local` (Windows);
+1. Make sure you have Go, Lua, Node, Ripgrep, and jdtls installed;
 1. Install `markdownlint` & `markdownlint-cli2`;
 
 ## How do do various things with my config
