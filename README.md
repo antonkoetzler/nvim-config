@@ -18,5 +18,7 @@
 
 #### Add a database connection
 
+1. Make `toggleterm` usable
+1. Make `markdownlint` actually format
 1. `:DBUI`;
 1. `Press enter on "Add connection"`.
