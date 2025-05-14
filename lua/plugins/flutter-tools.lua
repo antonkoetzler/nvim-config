@@ -8,7 +8,7 @@ return {
   },
   config = function()
     require('flutter-tools').setup({
-      flutter_lookup_cmd = 'echo /home/flqn/fvm/default',
+      -- flutter_lookup_cmd = 'echo /home/flqn/fvm/default',
       lsp = {
         on_attach = require('config.on_attach'),
         settings = {
