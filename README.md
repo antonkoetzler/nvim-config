@@ -23,7 +23,7 @@
 1. `:DBUI`;
 1. `Press enter on "Add connection"`.
 
-#### TODO
+## TODO
 
 1. Make a list of keybindings;
 2. Git files diff list and better keybindings for merge resolutions and file git diff;
