@@ -27,4 +27,5 @@
 
 1. Make a list of keybindings;
 2. Git files diff list and better keybindings for merge resolutions and file git diff;
-3. Fix Flutter LSP stopping when renaming a file that is in the buffer list.
+3. Fix Flutter LSP stopping when renaming a file that is in the buffer list;
+4. Debugger.

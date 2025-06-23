@@ -36,6 +36,7 @@ require('lazy').setup({
   require('plugins.vim-dadbod'),      -- Creates connection to databases to view and edit them.
   require('plugins.toggleterm'),      -- Open terminals.
   require('plugins.dashboard'),       -- Dashboard for a cool welcome screen.
+  require('plugins.vimtex'),          -- LaTeX
 
   -- Color schemes.
   require('plugins.vim-moonfly-colors'),
