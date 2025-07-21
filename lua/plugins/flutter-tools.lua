@@ -8,7 +8,8 @@ return {
   },
   config = function()
     require('flutter-tools').setup({
-      -- flutter_lookup_cmd = 'echo /home/flqn/fvm/default',
+      -- Windows fix for when the LSP isn't working.
+      -- flutter_lookup_cmd = 'cmd.exe /C echo %USERPROFILE%\\fvm\\default',
       lsp = {
         on_attach = require('config.on_attach'),
         settings = {
