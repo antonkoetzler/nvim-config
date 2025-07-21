@@ -16,6 +16,13 @@ return {
           showTodos = true,              -- Highlights // TODO.
           completeFunctionCalls = false, -- Autocompletes where it completes the arguments of a method/constructor.
         },
+        color = {
+          enabled = true, -- enables both virtual text and background coloring
+          background = true, -- show bg-colored highlight
+          foreground = false, -- optional, hides foreground
+          virtual_text = true, -- show inline color markers
+          virtual_text_str = "■", -- can be any character
+        },
       },
       widget_guides = {
         enabled = true, -- Shows lines connecting each widget.
