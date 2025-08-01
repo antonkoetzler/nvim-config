@@ -56,16 +56,9 @@ vim.api.nvim_set_keymap('n', '<leader>fh', '<cmd>Telescope buffers<cr><Esc>', op
 vim.api.nvim_set_keymap('n', '<leader>e', '<cmd>NvimTreeToggle<cr>', opts)
 
 -- Terminal (and toggleterm).
-vim.api.nvim_set_keymap('t', '<Esc>', '<C-\\><C-n>', opts)
-vim.api.nvim_set_keymap('n', '<C-t>', '<cmd>ToggleTerm direction=tab<CR>', opts)        -- Toggle terminal (creates a new one or opens existing terminal).
-vim.api.nvim_set_keymap('t', '<C-t>', '<cmd>ToggleTerm direction=tab<CR>', opts)        -- Toggle terminal (creates a new one or opens existing terminal).
-vim.api.nvim_set_keymap('n', '<C-A-t>', '<cmd>lua new_terminal()<CR>', opts)            -- Create new terminal(s).
-vim.api.nvim_set_keymap('t', '<C-A-t>', '<C-\\><C-n><cmd>lua new_terminal()<CR>', opts) -- Create new terminal(s).
-local term_count = 0
-function _G.new_terminal()
-  term_count = term_count + 1
-  vim.cmd(term_count .. 'ToggleTerm direction=tab')
-end
+vim.api.nvim_set_keymap('n', '<C-t>', '<cmd>lua toggle_float_term()<CR>', opts)            -- Toggle the (floating) terminal.
+vim.api.nvim_set_keymap('t', '<C-t>', '<C-\\><C-n><cmd>lua toggle_float_term()<CR>', opts) -- Toggle the terminal in TERMINAL mode.
+vim.api.nvim_set_keymap('t', '<Esc>', '<C-\\><C-n>', opts)                                 -- TERMINAL --> NORMAL mode.
 
 -- Diffview
 vim.api.nvim_set_keymap('n', '<leader>gd', '<cmd>DiffviewOpen<cr><cmd>DiffviewToggleFiles<cr>', opts) -- Git diff
