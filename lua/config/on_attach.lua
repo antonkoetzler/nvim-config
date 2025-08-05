@@ -17,10 +17,6 @@ return function(_, bufnr)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gn', '<cmd>lua vim.lsp.buf.rename()<CR>', opts)
 
   -- Snacks.nvim file rename (updates imports with native LSP)
-  vim.api.nvim_buf_set_keymap(bufnr, 'n', '<leader>cR', '<cmd>lua require("snacks").rename.rename_file()<CR>', opts)
-  --[[ vim.api.nvim_buf_set_keymap(bufnr, 'n', '<leader>cR',
-    '<cmd>lua local cwd = vim.fn.getcwd(); require("snacks").rename.rename_file(); vim.cmd("cd " .. cwd)<CR>',
-    opts) ]]
   vim.api.nvim_buf_set_keymap(bufnr, 'n', '<leader>cR', '<cmd>lua Safe_snacks_rename()<CR>',
     { noremap = true, silent = true })
 
