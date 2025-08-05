@@ -37,6 +37,7 @@ require('lazy').setup({
   require('plugins.toggleterm'),      -- Open terminals.
   require('plugins.dashboard'),       -- Dashboard for a cool welcome screen.
   require('plugins.vimtex'),          -- LaTeX
+  require('plugins.snacks'),          -- Renames file and updates imports of other files.
 
   -- Color schemes.
   require('plugins.vim-moonfly-colors'),

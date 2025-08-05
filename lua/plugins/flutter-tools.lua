@@ -18,10 +18,13 @@ return {
           completeFunctionCalls = false, -- Autocompletes where it completes the arguments of a method/constructor.
         },
         color = {
-          enabled = true,      -- Enables both virtual text and background coloring.
-          background = true,   -- show bg-colored highlight.
-          foreground = false,  -- optional, hides foreground.
-          virtual_text = false -- Don't show square of color on the right
+          enabled = true,       -- Enables both virtual text and background coloring.
+          background = true,    -- show bg-colored highlight.
+          foreground = false,   -- optional, hides foreground.
+          virtual_text = false, -- Don't show square of color on the right
+        },
+        dart = {
+          renameFilesWithClasses = "never",
         },
       },
       widget_guides = {
