@@ -30,6 +30,9 @@ return {
           error = "",
         },
       },
+      notify = {
+        threshold = vim.log.levels.ERROR, -- Only show error notifications
+      },
     })
   end,
 }
