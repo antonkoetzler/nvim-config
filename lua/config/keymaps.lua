@@ -24,7 +24,7 @@ vim.api.nvim_set_keymap('n', '<leader>tx', '<cmd>tabclose<cr>', opts) -- Close a
 vim.api.nvim_set_keymap('n', '<leader>tn', '<cmd>tabnext<cr>', opts)  -- Move to the previous tab.
 vim.api.nvim_set_keymap('n', '<leader>tp', '<cmd>tabprev<cr>', opts)  -- Move to the next tab.
 
--- Split navigation.
+-- Splits.
 vim.api.nvim_set_keymap('n', '<leader>1', '<C-w>1w', opts)
 vim.api.nvim_set_keymap('n', '<leader>2', '<C-w>2w', opts)
 vim.api.nvim_set_keymap('n', '<leader>3', '<C-w>3w', opts)
@@ -35,6 +35,8 @@ vim.api.nvim_set_keymap('t', '<leader>2', '<C-w>2w', opts)
 vim.api.nvim_set_keymap('t', '<leader>3', '<C-w>3w', opts)
 vim.api.nvim_set_keymap('t', '<leader>4', '<C-w>4w', opts)
 vim.api.nvim_set_keymap('t', '<leader>5', '<C-w>5w', opts)
+vim.api.nvim_set_keymap('n', '<leader>s', '<cmd>split<cr>', opts)
+vim.api.nvim_set_keymap('n', '<leader>v', '<cmd>vsplit<cr>', opts)
 
 -- Split resizing.
 vim.api.nvim_set_keymap('n', '<A-l>', '<C-w>10<', opts) -- Resize 10px leftward
