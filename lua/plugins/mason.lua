@@ -1,3 +1,4 @@
+-- LSP installer.
 return {
   'williamboman/mason.nvim',
   config = function()

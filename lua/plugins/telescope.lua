@@ -1,3 +1,4 @@
+-- File finder, live grep fuzzy search, buffer list, etc.
 return {
   'nvim-telescope/telescope.nvim',
   branch = '0.1.x',

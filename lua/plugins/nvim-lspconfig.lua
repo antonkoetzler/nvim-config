@@ -1,3 +1,4 @@
+-- LSP configuration.
 return {
   'neovim/nvim-lspconfig',
   depedencies = {
@@ -8,10 +9,6 @@ return {
     local lspconfig = require('lspconfig')
     local on_attach = require('config.on_attach')
     local mason_lspconfig = require('mason-lspconfig')
-
-    mason_lspconfig.setup({
-      automatic_installation = true,
-    })
 
     local custom_settings = {
       gopls = {
@@ -35,12 +32,12 @@ return {
         settings = {
           javascript = {
             format = {
-              quoteStyle = "single",
+              quoteStyle = 'single',
             },
           },
           typescript = {
             format = {
-              quoteStyle = "single",
+              quoteStyle = 'single',
             },
           },
         },

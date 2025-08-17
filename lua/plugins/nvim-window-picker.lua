@@ -1,3 +1,4 @@
+-- Window picker when opening a file with multiple windows active.
 return {
   's1n7ax/nvim-window-picker',
   name = 'window-picker',

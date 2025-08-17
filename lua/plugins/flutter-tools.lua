@@ -1,3 +1,4 @@
+-- Flutter.
 return {
   'akinsho/flutter-tools.nvim',
   dependencies = {

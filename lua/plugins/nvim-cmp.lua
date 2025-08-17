@@ -1,3 +1,4 @@
+-- LSP autocompletion.
 return {
   'hrsh7th/nvim-cmp',
   dependencies = {
@@ -12,12 +13,12 @@ return {
     require('cmp').setup({
       window = {
         completion = {
-          winhighlight = "Normal:Normal,FloatBorder:CmpCompletionBorder,CursorLine:Pmenu",
-          border = "rounded",
+          winhighlight = 'Normal:Normal,FloatBorder:CmpCompletionBorder,CursorLine:Pmenu',
+          border = 'rounded',
         },
         documentation = {
-          winhighlight = "Normal:Normal,FloatBorder:CmpCompletionBorder",
-          border = "rounded",
+          winhighlight = 'Normal:Normal,FloatBorder:CmpCompletionBorder',
+          border = 'rounded',
         },
       },
       mapping = {

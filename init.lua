@@ -1,4 +1,3 @@
-require('config.settings')    -- Basic vim settings.
-require('config.keymaps')     -- Setup keys + shortcuts.
-require('config.lazy')        -- Setup lazy nvim.
-require('config.colorscheme') -- Sets default colorscheme.
+require('config.lazy')      -- Bootstrap lazy.nvim, LazyVim and your plugins.
+require('config.shortcuts') -- Keyboard shortcuts.
+require('config.settings')  -- General vim settings.

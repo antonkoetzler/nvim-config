@@ -1,3 +1,4 @@
+-- Mason LSP configuration.
 return {
   'williamboman/mason-lspconfig.nvim',
   dependencies = { 'williamboman/mason.nvim' },
@@ -7,10 +8,9 @@ return {
         'lua_ls',
         'gopls',
         'ts_ls',
-        -- 'intelephense',
-        'phpactor',
         'tailwindcss',
       },
+      automatic_installation = true,
     })
   end,
 }

@@ -1,31 +1,17 @@
-# My Neovim configuration 💻
+# My Neovim configuration
 
-## Installation
+A Neovim configuration designed to be simple, minimal, light and scalable.
 
-1. Clone the repo into `~/.config` (Unix) or `C:\Users\<Username>\AppData\Local` (Windows);
-1. Make sure you have Go, Lua, Node, Ripgrep, and jdtls installed;
-1. Install `markdownlint` & `markdownlint-cli2`.
+## Navigation my configuration
 
-## How do do various things with my config
-
-#### Resolving merge conflicts
-
-1. `:DiffviewOpen`;
-1. `[x` & `]x` to traverse conflicts;
-1. `2do` to accept ours, `3do`  to accept theirs;
-1. `:DiffviewClose` when finished resolving conflicts;
-1. `Save file`.
-
-#### Add a database connection
-
-1. Make `toggleterm` usable
-1. Make `markdownlint` actually format
-1. `:DBUI`;
-1. `Press enter on "Add connection"`.
+1. `lua/config/lazy.lua`: Bootstrapper for LazyVim;
+1. `lua/config/on_attach.lua`: LSP shortcuts and configuration for every LSP server;
+1. `lua/config/settings.lua`: General vim settings;
+1. `lua/config/shortcuts.lua`: Keyboard shortcuts;
+1. `lua/plugins/*`: Plugins. Every plugin Lua file has a description detailing the purpose of the plugin.
 
 ## TODO
 
-1. Make a list of keybindings;
-2. Git files diff list and better keybindings for merge resolutions and file git diff;
-3. Fix Flutter LSP stopping when renaming a file that is in the buffer list;
-4. Debugger.
+1. Markdown lint;
+2. Git diff;
+3. Flutter running in Neovim configuration (and hot reload on save).

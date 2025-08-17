@@ -1,3 +1,4 @@
+-- Git blame.
 return {
   'f-person/git-blame.nvim',
   event = 'VeryLazy',

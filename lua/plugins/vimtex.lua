@@ -1,3 +1,4 @@
+-- LaTeX
 return {
   'lervag/vimtex',
   lazy = false,
