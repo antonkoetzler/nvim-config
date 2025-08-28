@@ -1,4 +1,4 @@
--- Flutter.
+-- Flutter LSP.
 return {
   'akinsho/flutter-tools.nvim',
   dependencies = {
@@ -12,7 +12,6 @@ return {
       -- Windows fix for when the LSP isn't working.
       -- flutter_lookup_cmd = 'cmd.exe /C echo %USERPROFILE%\\fvm\\default',
       lsp = {
-        on_attach = require('config.on_attach'),
         settings = {
           lineLength = 120,              -- Default line length.
           showTodos = true,              -- Highlights // TODO.
@@ -24,15 +23,9 @@ return {
           foreground = false,   -- optional, hides foreground.
           virtual_text = false, -- Don't show square of color on the right
         },
-        dart = {
-          renameFilesWithClasses = "never",
-        },
       },
       widget_guides = {
         enabled = true, -- Shows lines connecting each widget.
-      },
-      dev_log = {
-        open_cmd = 'botright 15split new', -- Show the console (i.e. that pops up when using :FlutterRun) at the bottom of the screen.
       },
     })
   end,

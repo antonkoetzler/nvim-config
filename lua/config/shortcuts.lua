@@ -1,15 +1,16 @@
--- Default options variable.
+-- Leader.
+vim.g.mapleader = ' ' -- Set space as leader key.
+vim.g.maplocalleader = ' ' -- Set space as local leader key.
+
+-- Helper variables.
+local map = vim.keymap.set
 local opts = { noremap = true, silent = true }
 
--- Leader keys.
-vim.g.mapleader = ' '
-vim.g.maplocalleader = '\\'
-
 -- General shortcuts.
-vim.api.nvim_set_keymap('v', '<C-c>', '"+y', opts)           -- Copy with Ctrl + C.
-vim.api.nvim_set_keymap('i', '<C-Backspace>', '<C-w>', opts) -- Ctrl + backspace.
-vim.api.nvim_set_keymap('i', '<C-h>', '<C-w>', opts)         -- Ctrl + backspace.
-vim.api.nvim_set_keymap('n', '<Esc>', '<Esc>:noh<CR>', opts) -- Disables highlighted results of a search.
+map('v', '<C-c>', '"+y', opts)           -- Copy with Ctrl + C.
+map('i', '<C-Backspace>', '<C-w>', opts) -- Ctrl + backspace.
+map('i', '<C-h>', '<C-w>', opts)         -- Ctrl + backspace.
+map('n', '<Esc>', '<Esc>:noh<CR>', opts) -- Disables highlighted results of a search.
 
 -- Buffers.
 vim.api.nvim_set_keymap('n', '<leader>x', '<cmd>Bdelete<cr>', opts) -- Delete a buffer.
@@ -37,15 +38,15 @@ vim.api.nvim_set_keymap('n', '<leader>s', '<cmd>split<cr>', opts)  -- Create a n
 vim.api.nvim_set_keymap('n', '<leader>v', '<cmd>vsplit<cr>', opts) -- Create a new window that is verticall split.
 
 -- Split resizing.
-vim.api.nvim_set_keymap('n', '<A-l>', '<C-w>10<', opts) -- Resize 10px leftward
-vim.api.nvim_set_keymap('n', '<A-h>', '<C-w>10>', opts) -- Resize 10px rightward
-vim.api.nvim_set_keymap('n', '<A-j>', '<C-w>+', opts)   -- Resize downward
-vim.api.nvim_set_keymap('n', '<A-k>', '<C-w>-', opts)   -- Resize downward
+vim.api.nvim_set_keymap('n', '<C-l>', '<C-w>10<', opts) -- Resize 10px leftward
+vim.api.nvim_set_keymap('n', '<C-h>', '<C-w>10>', opts) -- Resize 10px rightward
+vim.api.nvim_set_keymap('n', '<C-j>', '<C-w>+', opts)   -- Resize downward
+vim.api.nvim_set_keymap('n', '<C-k>', '<C-w>-', opts)   -- Resize downward
 
 -- Telescope.
 vim.api.nvim_set_keymap('n', '<leader>ff', '<cmd>Telescope find_files<cr>', opts)   -- Fuzzy file search.
 vim.api.nvim_set_keymap('n', '<leader>fg', '<cmd>Telescope live_grep<cr>', opts)    -- Fuzzy live grep.
 vim.api.nvim_set_keymap('n', '<leader>fh', '<cmd>Telescope buffers<cr><Esc>', opts) -- Buffer list.
 
--- nvim-tree.
-vim.api.nvim_set_keymap('n', '<leader>e', '<cmd>NvimTreeToggle<cr>', opts) -- Toggles the tree.
+-- Toggle nvim-tree with <leader>e (Super + e)
+map('n', '<leader>e', ':NvimTreeToggle<cr>', opts) -- Toggles the file explorer tree.
