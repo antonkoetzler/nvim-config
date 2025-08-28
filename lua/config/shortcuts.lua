@@ -1,5 +1,5 @@
 -- Leader.
-vim.g.mapleader = ' ' -- Set space as leader key.
+vim.g.mapleader = ' '      -- Set space as leader key.
 vim.g.maplocalleader = ' ' -- Set space as local leader key.
 
 -- Helper variables.
@@ -8,6 +8,10 @@ local opts = { noremap = true, silent = true }
 
 -- General shortcuts.
 map('v', '<C-c>', '"+y', opts)           -- Copy with Ctrl + C.
+map('n', '<C-v>', '"+p', opts)           -- Normal mode paste
+map('i', '<C-v>', '<C-r>+', opts)        -- Insert mode paste
+map('c', '<C-v>', '<C-r>+', opts)        -- Command mode paste
+map('v', '<C-v>', '"+p', opts)           -- Visual mode paste
 map('i', '<C-Backspace>', '<C-w>', opts) -- Ctrl + backspace.
 map('i', '<C-h>', '<C-w>', opts)         -- Ctrl + backspace.
 map('n', '<Esc>', '<Esc>:noh<CR>', opts) -- Disables highlighted results of a search.
