@@ -1,10 +1,10 @@
--- Leader.
-vim.g.mapleader = ' '      -- Set space as leader key.
-vim.g.maplocalleader = ' ' -- Set space as local leader key.
-
 -- Helper variables.
 local map = vim.keymap.set
 local opts = { noremap = true, silent = true }
+
+-- Leader keys.
+vim.g.mapleader = ' '      -- Set space as leader key.
+vim.g.maplocalleader = ' ' -- Set space as local leader key.
 
 -- General shortcuts.
 map('v', '<C-c>', '"+y', opts)           -- Copy with Ctrl + C.
@@ -47,10 +47,14 @@ vim.api.nvim_set_keymap('n', '<C-h>', '<C-w>10>', opts) -- Resize 10px rightward
 vim.api.nvim_set_keymap('n', '<C-j>', '<C-w>+', opts)   -- Resize downward
 vim.api.nvim_set_keymap('n', '<C-k>', '<C-w>-', opts)   -- Resize downward
 
--- Telescope.
+-- telescope.
 vim.api.nvim_set_keymap('n', '<leader>ff', '<cmd>Telescope find_files<cr>', opts)   -- Fuzzy file search.
 vim.api.nvim_set_keymap('n', '<leader>fg', '<cmd>Telescope live_grep<cr>', opts)    -- Fuzzy live grep.
 vim.api.nvim_set_keymap('n', '<leader>fh', '<cmd>Telescope buffers<cr><Esc>', opts) -- Buffer list.
 
--- Toggle nvim-tree with <leader>e (Super + e)
+-- nvim-tree.
 map('n', '<leader>e', ':NvimTreeToggle<cr>', opts) -- Toggles the file explorer tree.
+
+-- vim-fugitive.
+vim.api.nvim_set_keymap('n', '<leader>gdh', '<cmd>Gdiffsplit<CR>', opts)  -- Diff current buffer (horizontal).
+vim.api.nvim_set_keymap('n', '<leader>gdv', '<cmd>Gvdiffsplit<CR>', opts) -- Diff current buffer (vertical).

@@ -2,6 +2,5 @@
 
 ## TODO
 
-1. Git diff;
-2. Merge conflict resolver;
-3. LaTeX.
+1. Merge conflict resolver;
+1. LaTeX.
