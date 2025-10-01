@@ -70,11 +70,18 @@ return {
     dependencies = { 'hrsh7th/cmp-nvim-lsp', 'hrsh7th/cmp-buffer', 'hrsh7th/cmp-path' },
     config = function()
       local cmp = require('cmp')
+      
+      -- Set completeopt to disable built-in completion
+      vim.opt.completeopt = { 'menu', 'menuone', 'noselect' }
+      
       cmp.setup({
         mapping = {
+          ['<C-n>'] = require('cmp').mapping.select_next_item({ behavior = require('cmp').SelectBehavior.Insert }),
+          ['<C-p>'] = require('cmp').mapping.select_prev_item({ behavior = require('cmp').SelectBehavior.Insert }),
           ['<C-j>'] = require('cmp').mapping.select_next_item(),
           ['<C-k>'] = require('cmp').mapping.select_prev_item(),
           ['<C-y>'] = require('cmp').mapping.confirm({ select = true }),
+          ['<C-Space>'] = require('cmp').mapping.complete(),
         },
         sources = cmp.config.sources({
           { name = 'nvim_lsp' },
