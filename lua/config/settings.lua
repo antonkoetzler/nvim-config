@@ -7,3 +7,7 @@ vim.o.splitright      = true                                                    
 vim.o.smartindent     = true                                                       -- Indent based on current column number of cursor.
 vim.opt.termguicolors = true                                                       -- Enable terminal colors if said terminal has them.
 vim.api.nvim_create_autocmd('VimResized', { pattern = '*', command = 'wincmd =' }) -- Proportionally resize splits when terminal window is resized.
+vim.g.neovide_cursor_animation_length = 0                                          -- Disabling Neovide animations
+vim.g.neovide_scroll_animation_length = 0                                          -- Disabling Neovide animations
+vim.g.neovide_cursor_animate_in_insert_mode = false                                -- Disabling Neovide animations
+vim.g.neovide_cursor_animate_command_line = false                                  -- Disabling Neovide animations
