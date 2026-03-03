@@ -52,6 +52,9 @@ map('n', '<leader>ff', '<cmd>Telescope find_files<cr>', opts)   -- Fuzzy file se
 map('n', '<leader>fg', '<cmd>Telescope live_grep<cr>', opts)    -- Fuzzy live grep.
 map('n', '<leader>fh', '<cmd>Telescope buffers<cr><Esc>', opts) -- Buffer list.
 
+-- themes.
+map('n', '<leader>ft', '<cmd>Themery<cr>', opts) -- Open theme picker (live preview, persists).
+
 -- nvim-tree.
 map('n', '<leader>e', ':NvimTreeToggle<cr>', opts) -- Toggles the file explorer tree.
 

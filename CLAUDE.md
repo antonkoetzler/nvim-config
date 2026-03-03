@@ -36,6 +36,7 @@ This is a personal Neovim configuration using Lua. It manages plugins via [lazy.
 | `<leader>ff` | Telescope find files |
 | `<leader>fg` | Telescope live grep |
 | `<leader>fh` | Telescope buffers |
+| `<leader>ft` | Themery theme picker |
 | `<leader>e` | Toggle nvim-tree |
 | `<leader>x` | Delete buffer (vim-bbye) |
 | `<leader>p/n` | Prev/next buffer |
@@ -57,6 +58,7 @@ This is a personal Neovim configuration using Lua. It manages plugins via [lazy.
 
 | Plugin | Purpose |
 |--------|---------|
+| `color-scheme` | themery.nvim (persistent picker) + all themes (lazy = true) |
 | `nvim-tree` | File explorer sidebar |
 | `telescope` | Fuzzy finder (files, grep, buffers) |
 | `vim-bbye` | Clean buffer deletion without closing splits |

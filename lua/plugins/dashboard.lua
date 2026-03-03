@@ -71,5 +71,13 @@ return {
     }
 
     require('alpha').setup(dashboard.opts)
+
+    -- No buttons in the layout, so disable <CR> to prevent alpha.press() crashing on nil.
+    vim.api.nvim_create_autocmd('FileType', {
+      pattern = 'alpha',
+      callback = function()
+        vim.keymap.set('n', '<CR>', '<nop>', { buffer = true, silent = true })
+      end,
+    })
   end,
 }
