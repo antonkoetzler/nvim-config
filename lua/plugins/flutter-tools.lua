@@ -9,8 +9,6 @@ return {
   },
   config = function()
     require('flutter-tools').setup({
-      -- Windows fix for when the LSP isn't working.
-      -- flutter_lookup_cmd = 'cmd.exe /C echo %USERPROFILE%\\fvm\\default',
       lsp = {
         settings = {
           lineLength = 120,              -- Default line length.

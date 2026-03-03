@@ -23,6 +23,7 @@ return {
   -- Neovim LSP configuration.
   {
     'neovim/nvim-lspconfig',
+    event = { 'BufReadPost', 'BufNewFile' },
     config = function()
       local lspconfig = require('lspconfig')
 
@@ -40,15 +41,13 @@ return {
           vim.keymap.set('n', 'ge',
             function() vim.diagnostic.jump({ count = 1, float = true }) end, opts)  -- Next diagnostic.
 
-          -- Autoformat on save if server supports it
-          if vim.lsp.buf.format then
-            vim.api.nvim_create_autocmd("BufWritePre", {
-              buffer = ev.buf,
-              callback = function()
-                vim.lsp.buf.format({ async = false })
-              end,
-            })
-          end
+          -- Autoformat on save.
+          vim.api.nvim_create_autocmd("BufWritePre", {
+            buffer = ev.buf,
+            callback = function()
+              vim.lsp.buf.format({ async = false })
+            end,
+          })
         end,
       })
 
